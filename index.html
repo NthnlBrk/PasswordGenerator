@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,4 +67,77 @@
     </div>
   </div>
 </body>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex items-center justify-center min-h-screen bg-gray-950 text-white"
+  >
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg w-full max-w-md">
+      <!-- Title -->
+      <h1 class="text-2xl font-semibold text-center mb-4 text-blue-400">
+        🔒 Secure Password Generator
+      </h1>
+
+      <!-- Password Display -->
+      <div class="relative">
+        <input
+          id="password"
+          type="text"
+          class="w-full p-3 pr-12 bg-gray-800 text-white rounded-lg text-lg tracking-wide border border-gray-700 focus:border-blue-500 outline-none"
+          readonly
+          placeholder="Your secure password..."
+        />
+        <button
+          id="copy"
+          class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition"
+          title="Copy to clipboard"
+        >
+          📋
+        </button>
+      </div>
+
+      <div class="mt-4 flex flex-col gap-4">
+        <div class="flex items-center justify-between">
+          <label for="passLength" class="text-gray-300 text-sm"
+            >Password Length:</label
+          >
+          <input
+            type="number"
+            id="passLength"
+            class="bg-gray-800 text-white text-lg p-2 rounded-lg w-16 text-center border border-gray-700 focus:border-blue-500 outline-none"
+            min="8"
+            max="32"
+            value="12"
+          />
+        </div>
+
+        <div class="flex items-center gap-2">
+          <input
+            type="checkbox"
+            id="specialCharBox"
+            checked
+            class="w-5 h-5 text-blue-500 focus:ring-0 bg-gray-800 border-gray-600 rounded"
+          />
+          <label for="specialCharBox" class="text-gray-300 text-sm">
+            Include Special Characters
+          </label>
+        </div>
+
+        <!-- Buttons -->
+        <button
+          id="generate"
+          class="w-full px-4 py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium text-lg rounded-lg transition"
+        >
+          Generate Password
+        </button>
+      </div>
+    </div>
+  </body>
+>>>>>>> 0700e3d (Save progress before pull)
 </html>
